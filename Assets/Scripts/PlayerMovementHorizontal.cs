@@ -13,17 +13,15 @@ float xVector;
     // Start is called before the first frame update
     void Start()
     {
-        
-
         walkingSpeed = 5f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Reminder: Create seperate script for overworld
         xDirection = Input.GetAxis("Horizontal");
         xVector = xDirection * walkingSpeed * Time.deltaTime;
-        //Cannot access non-static property 'position' in static context
-        //Transform.position = Transform.position + new Vector3(xVector, 0, 0);
+        transform.position = transform.position + new Vector3(xVector, 0, 0);
     }
 }
