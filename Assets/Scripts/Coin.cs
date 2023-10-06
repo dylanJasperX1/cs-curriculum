@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class COINS : MonoBehaviour
+public class Coin : MonoBehaviour
 {
     public int coins;
     // Start is called before the first frame update
@@ -16,13 +16,13 @@ public class COINS : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.CompareTag("Coin"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Coin collected");
-
+            gameObject.SetActive(false);
         }
     }
 }
