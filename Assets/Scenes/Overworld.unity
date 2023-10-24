@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4790d855844fe4cc59aebc4a06b5e93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 2
+  scene: 0
 --- !u!483693784 &445130150
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -85024,7 +85024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de336dbee41042049c35ca9645ed5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 5
 --- !u!114 &1750497398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85032,6 +85032,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750497384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709600906656e48d090fb78cbf88e7dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+--- !u!1 &1814688330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6403623598370113648, guid: 90dffdbfe49434c23b998629363a889c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2062599213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1814688334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814688330}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 709600906656e48d090fb78cbf88e7dc, type: 3}
@@ -85672,8 +85691,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d346a78eef5484b33a3b09c3f44f967c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 1908102777}
-  purse: {fileID: 1750497398}
+  coinText: {fileID: 0}
+  healthText: {fileID: 0}
+  purse: {fileID: 0}
+  health: {fileID: 0}
 --- !u!1001 &2013016796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85814,7 +85835,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6403623598370113648, guid: 90dffdbfe49434c23b998629363a889c,
+        type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1814688334}
   m_SourcePrefab: {fileID: 100100000, guid: 90dffdbfe49434c23b998629363a889c, type: 3}
 --- !u!1001 &2066015542
 PrefabInstance:
@@ -86009,6 +86034,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581776284487364933, guid: f29cbbb5a46b445be93647346c09fcf8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5318328147712641153, guid: f29cbbb5a46b445be93647346c09fcf8,
         type: 3}

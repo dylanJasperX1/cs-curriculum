@@ -9,7 +9,7 @@ public class HUD : MonoBehaviour
     public TextMeshProUGUI healthText;
     
     public Coin purse;
-    public Spike health;
+    public Spike spike;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,6 @@ public class HUD : MonoBehaviour
     void Update()
     {
         coinText.text = "Coins: " + purse.coins;
-        healthText.text = "Health: " + Spike.health;
+        //healthText.text = "Health: " + health.health;
     }
 }

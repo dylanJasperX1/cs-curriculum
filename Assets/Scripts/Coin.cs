@@ -11,13 +11,12 @@ public class Coin : MonoBehaviour
     void Start()
     {
         
-        Debug.Log("Initial coins: " + coins);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Coins: " + coins);
     }
     
     public void OnTriggerEnter2D(Collider2D collision)
