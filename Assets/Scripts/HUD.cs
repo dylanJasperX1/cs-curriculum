@@ -19,7 +19,7 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text = "Coins: " + purse.coins;
-        //healthText.text = "Health: " + health.health;
+        coinText.text = "Coins: " + purse.coins; 
+        healthText.text = "Health: " + spike.health;
     }
 }
