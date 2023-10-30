@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public int coins;
-    
+    public int coins; 
+    public HUD hud;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class Coin : MonoBehaviour
             coins += 1;
             Debug.Log("Coins: " + coins);
             Destroy(collision.gameObject);
+            hud.coinText.text = "Coins: " + coins;
         }
     }
 }

@@ -13,13 +13,14 @@ public class HUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        coinText.text = "Coins: "+purse.coins;
+        healthText.text = "Health: " + spike.health;
     }
 
     // Update is called once per frame
     void Update()
     {
-        coinText.text = "Coins: " + purse.coins; 
-        healthText.text = "Health: " + spike.health;
+        
+        
     }
 }
