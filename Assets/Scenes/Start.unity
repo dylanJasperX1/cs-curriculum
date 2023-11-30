@@ -3137,7 +3137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 119856940}
+  healthText: {fileID: 0}
   purse: {fileID: 1856841609}
+  spike: {fileID: 0}
 --- !u!4 &669544401
 Transform:
   m_ObjectHideFlags: 0
@@ -4295,6 +4297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  hud: {fileID: 669544400}
 --- !u!1001 &1865696210
 PrefabInstance:
   m_ObjectHideFlags: 0
