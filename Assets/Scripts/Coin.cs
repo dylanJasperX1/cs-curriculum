@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour
 {
     public int coins; 
     public HUD hud;
+    
     // Start is called before the first frame update
     void Start()
     {
