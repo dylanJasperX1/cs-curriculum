@@ -5,7 +5,6 @@ using TMPro;
 
 public class HUD : MonoBehaviour
 {
-    
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI healthText;
     public Coin purse;
@@ -13,9 +12,9 @@ public class HUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coinText.text = "Coins: "+purse.coins;
-        healthText.text = "Health: " + spike.health;
         coinText = GameObject.FindGameObjectWithTag("Text").GetComponent<TextMeshProUGUI>();
+        coinText.text = "Coins: " + purse.coins;
+        healthText.text = "Health: " + spike.health;
     }
 
     // Update is called once per frame
