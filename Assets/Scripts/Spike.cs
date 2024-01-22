@@ -25,7 +25,7 @@ public class Spike : MonoBehaviour
 
         }
 
-        Debug.Log("Health: " + health);
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

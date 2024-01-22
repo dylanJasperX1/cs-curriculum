@@ -17,7 +17,7 @@ public class Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Coins: " + coins);
+        
     }
     
     public void OnTriggerEnter2D(Collider2D collision)
