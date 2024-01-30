@@ -5,19 +5,25 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed;
-    public Transform target;
+    Vector3 target;
     
     // Start is called before the first frame update
     void Start()
     {
-        //here
+        target = GameObject.FindObjectOfType<PlayerMovement>().gameObject.transform.position;
         speed = 8;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         var step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, transform.position, step);
+        transform.position = Vector3.MoveTowards(transform.position, target, step);
+
+        if (Vector3.Distance(transform.position, target) < 0.001f)
+        {
+            Destroy(gameObject,.1f);
+        }
     }
 }

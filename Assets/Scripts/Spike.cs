@@ -37,5 +37,12 @@ public class Spike : MonoBehaviour
             hud.healthText.text = "Health: " + health;
         }
 
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 1;
+            Destroy(collision.gameObject);
+            hud.healthText.text = "Health: " + health;
+        }
+
     }
 }
